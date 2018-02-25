@@ -61,7 +61,7 @@ For details about how I created the training data, see the next section.
 
 My first step was to use a LeNet architecture, but the car went off the track. A Lambda layer was introduced to normalize the input images to zero means. This step allows the car to move a bit further, but it didn't get to the first turn. Another Cropping layer was introduced, and the first turn was almost there, but not quite.
 
-So I used an even more powerful network designed by [NVIDIA] https://devblogs.nvidia.com/deep-learning-self-driving-cars/. This time the car did drive better, but it still not able to get through the curves. I have collected more data. Augmented the data by adding the same image flipped with a negative angle. In addition to that, the left and right camera images were introduced with a correction factor on the angle to help the car drive back to the center. 
+So I used an even more powerful network designed by [NVIDIA](https://devblogs.nvidia.com/deep-learning-self-driving-cars/). This time the car did drive better, but it still not able to get through the curves. I have collected more data. Augmented the data by adding the same image flipped with a negative angle. In addition to that, the left and right camera images were introduced with a correction factor on the angle to help the car drive back to the center. 
 
 In order to gauge how well the model was working, I split my image and steering angle data into a training and validation set. At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
 
