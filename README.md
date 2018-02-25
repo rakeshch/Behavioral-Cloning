@@ -31,7 +31,7 @@ python drive.py model.h5
 
 #### 3. Submission code is usable and readable
 
-The model.py/ model.ipynb file contains the code for training and saving the convolution neural network. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
+The model.py/ model.ipynb file contains the code for training and saving the convolution neural network.  The model uses a Python generator to generate data for training rather than storing the training data in memory. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
 
 ### Model Architecture and Training Strategy
 
@@ -78,6 +78,10 @@ To capture good driving behavior, I have captured 2 laps of center lane driving,
 To augment the data sat, I also flipped images and angles thinking that this would help with the left turn bias. For example, here is an image that has then been flipped:
 
 ![Screenshot](./examples/flipped_img.PNG)
+
+Below are the images from the data set corresponsing to center, left and right cameras:
+
+![Screenshot](./examples/center_2018_02_24_18_44_47_649.jpg) ![Screenshot](./examples/left_2018_02_24_18_44_47_649.jpg) ![Screenshot](./examples/right_2018_02_24_18_44_47_649.jpg)
 
 I finally randomly shuffled the data set and put 80% of the data into training set and 20% of the data into a validation set. 
 
