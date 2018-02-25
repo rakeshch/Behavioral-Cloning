@@ -7,7 +7,7 @@ The goals / steps of this project are the following:
 * Test that the model successfully drives around track one without leaving the road
 * Summarize the results with a written report
 
-My complete project code with results for individual steps can be found [here](./Behavioral-Cloning/blob/master/model.ipynb)
+My complete project code with comments for individual steps can be found [here](./model.ipynb)
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
