@@ -93,7 +93,7 @@ I used this training data for training the model. The validation set helped dete
 
 I worked with data generators to help preprocess large amounts of data. This really helped me saved lot of time testing on large data set.
 
-Here is the visualization of the loss:
+Below image is the visualization of training and validation loss for each epoch
 
 ![Screenshot](./examples/losschart.PNG)
 
