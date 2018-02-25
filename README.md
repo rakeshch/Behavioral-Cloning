@@ -79,9 +79,13 @@ To augment the data sat, I also flipped images and angles thinking that this wou
 
 ![Screenshot](./examples/flipped_img.PNG)
 
-Below are the images from the data set corresponsing to center, left and right cameras:
+Below are the images from the data set corresponsing to center, left and right cameras
 
-![Screenshot](./examples/center_2018_02_24_18_44_47_649.jpg) ![Screenshot](./examples/left_2018_02_24_18_44_47_649.jpg) ![Screenshot](./examples/right_2018_02_24_18_44_47_649.jpg)
+![Screenshot](./examples/center_2018_02_24_18_44_47_649.jpg) 
+
+![Screenshot](./examples/left_2018_02_24_18_44_47_649.jpg) 
+
+![Screenshot](./examples/right_2018_02_24_18_44_47_649.jpg)
 
 I finally randomly shuffled the data set and put 80% of the data into training set and 20% of the data into a validation set. 
 
