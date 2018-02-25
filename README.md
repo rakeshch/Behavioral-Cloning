@@ -39,8 +39,6 @@ The model.py/ model.ipynb file contains the code for training and saving the con
 
 My model uses NVIDIA architecure that consists of Normalization layer, 5 convolution layers and 4 fully connected layers as shown below:
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "NVIDIA CNN architecture")
-
 The model includes RELU layers to introduce nonlinearity, and the data is normalized in the model using a Keras lambda layer. I also used Keras Cropping2D function to crop input images simultaneously when making predictions.
 
 #### 2. Attempts to reduce overfitting in the model
@@ -71,7 +69,7 @@ In order to gauge how well the model was working, I split my image and steering 
 
 My model uses NVIDIA architecure that consists of Normalization layer, 5 convolution layers and 4 fully connected layers as shown below:
 
-![alt text](./examples/NVIDIA%20model.PNG "NVIDIA CNN architecture")
+![Screenshot](./examples/NVIDIA%20model.PNG "NVIDIA CNN architecture")
 
 #### 3. Creation of the Training Set & Training Process
 
@@ -79,7 +77,7 @@ To capture good driving behavior, I have captured 2 laps of center lane driving,
 
 To augment the data sat, I also flipped images and angles thinking that this would help with the left turn bias For example, here is an image that has then been flipped:
 
-![alt text][./examples/flipped_img.PNG]
+![Screenshot](./examples/flipped_img.PNG)
 
 I finally randomly shuffled the data set and put 80% of the data into training set and 20% of the data into a validation set. 
 
@@ -89,7 +87,7 @@ I used generators to help preprocess large amounts of data. This really helped m
 
 Finally, I used model.fit_generator to output a history object that contains the training and validation loss for each epoch. Here is the visualization of the loss
 
-![alt text][./examples/losschart.PNG]
+![Screenshot](./examples/losschart.PNG)
 
 
 
