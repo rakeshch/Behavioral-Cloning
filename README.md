@@ -37,7 +37,7 @@ The model.py/ model.ipynb file contains the code for training and saving the con
 
 #### 1. An appropriate model architecture has been employed
 
-My model uses NVIDIA architecure that consists of Normalization layer, 5 convolution layers and 4 fully connected layers as shown below:
+My model uses NVIDIA architecure that consists of Normalization layer, 5 convolution layers and 4 fully connected layers.
 
 The model includes RELU layers to introduce nonlinearity, and the data is normalized in the model using a Keras lambda layer. I also used Keras Cropping2D function to crop input images simultaneously when making predictions.
 
@@ -75,7 +75,7 @@ My model uses NVIDIA architecure that consists of Normalization layer, 5 convolu
 
 To capture good driving behavior, I have captured 2 laps of center lane driving,1 lap of recover driving from sides and 1 lap of smooth driving around curves. 
 
-To augment the data sat, I also flipped images and angles thinking that this would help with the left turn bias For example, here is an image that has then been flipped:
+To augment the data sat, I also flipped images and angles thinking that this would help with the left turn bias. For example, here is an image that has then been flipped:
 
 ![Screenshot](./examples/flipped_img.PNG)
 
@@ -83,9 +83,9 @@ I finally randomly shuffled the data set and put 80% of the data into training s
 
 I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 5 as evidenced. I used an adam optimizer so that manually training the learning rate wasn't necessary.
 
-I used generators to help preprocess large amounts of data. This really helped me saved lot of time testing on large data set.
+I worked with data generators to help preprocess large amounts of data. This really helped me saved lot of time testing on large data set.
 
-Finally, I used model.fit_generator to output a history object that contains the training and validation loss for each epoch. Here is the visualization of the loss
+Here is the visualization of the loss:
 
 ![Screenshot](./examples/losschart.PNG)
 
